@@ -11,6 +11,7 @@ class Show < ActiveRecord::Base
 
 
   def self.lowest_rating
+    binding.pry
     self.minimum("rating")
   end
 
